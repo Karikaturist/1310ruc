@@ -25,8 +25,8 @@ namespace Homework9
             this.surname = surname;
             this.thirdname = thirdname;
             FakNom = GenerateFakNom();  
-            int ocenka1=2; 
-            int ocenka2=2;
+            int ocenka1; 
+            int ocenka2;
             this.studentcounter = studentcounter+1;
     }
 
@@ -49,11 +49,18 @@ namespace Homework9
             //else it throws an exception
         }
 
-        class Student
-        {
+      //  class Student
+      //  {
             static void Main(string[] args)
             {
-                Student student=new Student("id", "FakNom");
+                
+                Student firststudent=new Student("id", "FakNom");
+                firststudent.name = "Ivan";
+                firststudent.thirdname = "Petrov";
+                firststudent.ocenka1 = 4;
+                firststudent.ocenka2 = 3;
+                
+                Console.Write(studentcounter);
                 //string Id;
                 //string GenerateFakNom;
                 //string name = Console.ReadLine();
@@ -64,6 +71,6 @@ namespace Homework9
 
       
     
-    }
+ //   }
     }
 }
